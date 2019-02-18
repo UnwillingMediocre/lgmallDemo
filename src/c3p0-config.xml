@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="user">jsu126</property>
+		<property name="password">0216</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://139.199.162.74:3306/jdmall?useSSL=false</property>
+	</default-config> 
+</c3p0-config> 

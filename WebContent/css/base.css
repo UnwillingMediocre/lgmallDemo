@@ -1,0 +1,451 @@
+html, body, div, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,span,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video,a{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;	
+    background:transparent;
+    font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serifcurrent;
+}
+body{
+	margin: 0;
+	background-color: #f0f3ef;
+}
+.w{ 
+	width: 1190px; /*鐗堝績*/
+	margin: 0 auto;
+
+}
+.f10{
+	color: #f10215 !important;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #999; 
+}
+a:hover{
+	color: #e33333!important;
+}
+input, button{
+	border: 0;
+	outline: none;
+}
+ul{
+
+	list-style: none;
+	font-size: 20px;
+}
+.city{
+	margin-left: 200px;
+}
+/*header部分*/	
+header{
+	height: 80px;
+	width: 100%;
+	background-color: #6a11ff;
+}
+/*顶部广告部分*/
+header .w .advert{
+	cursor:pointer; 
+	position: absolute; 
+	right: 5px; 
+	top: 5px; 
+	font-weight: bold; 
+	font-size: 14px; 
+	color: #FFF; 
+	background: rgb(45,45,45); 
+	opacity: .3; 
+	width: 20px;
+	height: 20px;
+	text-align: center; 
+	line-height: 20px;
+}
+
+/*快速导航栏 start*/
+.shortcut{
+	height: 30px;
+	line-height: 24px;
+	background-color: #e3e4e5;
+	border: 1px solid #ddd;
+	/*position: relative;*/
+}
+.shortcut li{ /*列表右边设置*/
+	float: left;
+}
+.shortcut i{ /*字体图片设置*/
+	font-family: "icomoon";
+	font-style: normal;
+	line-height: 24px;
+	color: #ccc;
+}
+/*我的京东下拉菜单 start*/
+.myjd{
+	position: relative;
+}
+.shortcut_jd{
+	width: 295px;
+	height: 180px;
+	background: #fff;
+	z-index: 999;
+	position: absolute;
+	top: 28px;
+	left: -1px;
+	border: 1px solid #ccc;
+	border-top: none;
+	display: none;
+}
+.jd_t{
+	width: 295px;
+	height: 90px;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0 10px;
+}
+.shortcut_jdt_l{
+	width: 126px;
+	height: 70px;
+	float: left;
+}
+.jd_t ul{
+	padding: 10px 0 10px 15px;
+}
+.shortcut_jdt_l li{
+	width: 126px;
+}
+.shortcut_jdt_l li a{
+	font-size: 14px;
+}
+.shortcut_jdt_r{	
+	width: 126px;
+	height: 70px;
+	float: right;
+}
+.shortcut_jdt_r li{
+	width: 126px;
+}
+.shortcut_jdt_r li a{	
+	font-size: 14px;
+}
+
+.shortcut_jd .jd_b{
+	width: 295px;
+	height: 90px;
+	padding: 10px 0 10px 15px;
+}
+.shortcut_jdb_l{
+	width: 126px;
+	height: 70px;
+	float: left;
+}
+.shortcut_jdb_l li{
+	width: 126px;
+}
+.shortcut_jdb_l li a{
+	font-size: 14px;
+}
+.shortcut_jdb_r{	
+	width: 126px;
+	height: 70px;
+	float: right;
+}
+.shortcut_jdb_r li{
+	width: 126px;
+}
+.shortcut_jdb_r li a{	
+	font-size: 14px;
+}
+.shortcut .myjd:hover{
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+/*我的京东下拉菜单 end*/
+/*企业采购下拉菜单 start*/
+.company{
+	position: relative;
+}
+.shortcut_company{
+	width: 160px;
+	height: 60px;
+	background: #fff;
+	z-index: 999;
+	position: absolute;
+	top: 28px;
+	left: -1px;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 10px 0 10px 10px;
+	display: none;
+}
+.company_all li{
+	width: 80px;
+}
+.company_all li a{
+	font-size: 14px;
+}
+.shortcut .company:hover{
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+/*企业采购下拉菜单 end*/
+/*客户服务下拉菜单 start*/
+.customer{
+	position: relative;
+}
+.shortcut_CB{
+	width: 192px;
+	height: 280px;
+	background: #fff;
+	z-index: 999;
+	position: absolute;
+	top: 28px;
+	right: -1px;
+	border: 1px solid #ccc;
+	border-top: none;
+	display: none;
+}
+.shortcut_CB .shortcut_customer_t{
+	width: 172px;
+	height: 130px;
+	border-bottom: 1px dashed #ccc; 
+	padding: 10px 0 10px 15px;
+}
+.shortcut_CB .shortcut_customer_t .shortcut_customer{
+	font-size: 14px;
+	font-weight: bold;
+	width: 172px;
+}
+.shortcut_CB .shortcut_customer_t .item{
+	width: 86px;
+}
+.shortcut_CB .shortcut_customer_t a{
+	font-size: 14px;
+}
+.shortcut_CB .shortcut_business_b{
+	width: 172px;
+	height: 130px;
+	padding: 10px 0 10px 15px;
+}
+.shortcut_CB .shortcut_business_b .shortcut_business{
+	font-size: 14px;
+	font-weight: bold;
+	width: 172px;
+}
+.shortcut_CB .shortcut_business_b .item{
+	width: 86px;
+}
+.shortcut_CB .shortcut_business_b a{
+	font-size: 14px;
+}
+.shortcut .customer:hover{
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+/*客户服务下拉菜单 end*/
+.space{ /*小竖线*/
+	width: 1px;
+	height: 12px;
+	background-color: #ccc;
+	margin: 10px 12px 0;
+}
+/*手机乐购二维码 start*/
+.mobile{
+	position: relative;
+}
+.mobile img{
+	position: absolute;
+	left: -3px;
+	top: 24px;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+.mobile:before { /*三角形*/
+    content: "";
+    position: absolute;
+    display: block;
+    top: 14px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e4e4e4 #e4e4e4 #f6f6f6;
+}
+/*手机乐购二维码 end*/
+/*快速导航栏 end*/
+/*中间部分*/
+.middle{
+	position: relative;
+	height: 140px;
+}
+.logo{
+	position: absolute;
+	top: -30px;
+	left: 0px;
+	z-index: 2;
+}
+.logo a{
+	display: inline-block;
+	width: 190px;
+	height: 170px;
+	text-indent: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #fff;
+	background-image: url(../img/logo_1.png);
+	box-shadow: 0px -2px 10px rgba(0,0,0,.3);
+}
+#logo_scene_text {
+    position: absolute;
+    left: 35px;
+    bottom: 77px;
+    display: inline-block;
+    width: 120px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    background: transparent;
+    color: #555;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 1;
+}
+#logo_scene_btn {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: 105px;
+    left: 50%;
+    margin-left: -32px;
+    text-indent: 4px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #555;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.form{
+	width: 600px;
+	height: 35px;
+	position: absolute;
+	top: 30px;
+	left: 300px;
+}
+.form input{
+	width: 520px;
+	height: 40px;
+	float: left;
+	font-size: 14px;
+	padding-left: 3px;
+}
+.form button{
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	background-color: #f10215;
+	float: left;
+	z-index: 1;
+}
+.form button i{
+	font-family: "icomoon";
+	font-style: normal;
+	color: #fff;
+	font-size: 20px;
+}
+.shopCar{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 30px;
+	right: 80px;
+	background-color: #fff;
+	text-align: center;
+	color: #f10215;
+}
+.shopCar i{
+	font-family: "icomoon";
+	font-style: normal;
+	margin-right: 5px;
+}
+.shopCar span{
+	width: 15px;
+	height: 15px;
+	background-color: #f10215;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	right: 35px;
+	color: #fff;
+	line-height: 15px;
+}
+/*关键字搜索*/
+.hotwords{
+	position: absolute;
+	top: 80px; 
+	left: 300px;
+	z-index: 1;
+}
+.hotwords a{
+	font-size: 14px;
+	margin-right: 5px;
+}
+/*小导航部分*/
+.navitems{
+	width: 955px;
+	height: 60px;
+	line-height: 75px;
+	position: absolute;
+	bottom: 0;
+	left: 90px;
+	margin-left: 90px;
+}
+.navitems li{
+	float: left;
+	margin-left: 32px;
+}
+.navitems li a{
+	font-size: 15px;
+	color: #333;
+}
+.navitems .space{
+	margin: 35px -16px 0 16px; 
+}
+.advert{
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	width: 190px;
+	height: 40px;
+}
